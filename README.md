@@ -52,9 +52,6 @@ I’m passionate about **solving real-world problems with technology**, creating
 **🎓 Bachelor of Computer Science (Data Science & AI)**  
 *Swinburne University of Technology*  
 
-**📘 Foundation in IT / Multimedia**  
-*Swinburne University of Technology*  
-
 ---
 
 ### 🌱 Interests  
