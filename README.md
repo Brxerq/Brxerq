@@ -67,7 +67,6 @@ I’m passionate about **solving real-world problems with technology**, creating
 
 📧 [kinghassaan99@gmail.com](mailto:kinghassaan99@gmail.com)  
 💼 [LinkedIn](https://www.linkedin.com/in/syed-muhammad-hassaan)  
-🌐 [GitHub](https://github.com/Brxerq)  
 
 ---
 
