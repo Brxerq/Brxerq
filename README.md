@@ -1,260 +1,179 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&height=125&section=header&color=0:090C0B,45:262D29,78:3F4A43,100:C8FF3D&animation=fadeIn" width="100%" alt="" />
+<p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hero-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/hero-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <img src="assets/hero-light.svg" alt="Hassaan. Conversations in. Real work out. AI engineer and full-stack product builder at Ryzon Labs." width="100%">
+</picture>
+</p>
 
-<div align="center">
+<p align="center">
+  <b>Syed Muhammad Hassaan Bin Ghayas</b><br>
+  AI Engineer · Full-stack Product Builder · Ryzon Labs
+</p>
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Mono&weight=700&size=32&duration=1800&pause=700&color=C8FF3D&center=true&vCenter=true&repeat=false&width=1000&height=65&lines=SYED+MUHAMMAD+HASSAAN+BIN+GHAYAS" alt="Syed Muhammad Hassaan Bin Ghayas" />
+<p align="center">
+  <a href="https://ryzonlabs.com"><b>Ryzon Labs ↗</b></a> &nbsp; · &nbsp;
+  <a href="https://www.linkedin.com/in/syed-muhammad-hassaan"><b>LinkedIn ↗</b></a> &nbsp; · &nbsp;
+  <a href="mailto:sm.hassaan99@gmail.com"><b>Get in touch ↗</b></a>
+</p>
 
-<h1>
-Building AI systems that turn<br/>
-conversations into action.
-</h1>
+I build AI-powered systems for real business workflows, connecting conversational interfaces, intelligent decision-making, operational tools and production infrastructure into complete products.
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2200&pause=700&color=C8FF3D&center=true&vCenter=true&repeat=true&width=900&height=52&lines=VOICE+AGENTS+THAT+HANDLE+REAL+CALLS;AUTONOMOUS+SYSTEMS+THAT+EXECUTE+REAL+WORK;AI+PRODUCTS+BUILT+FOR+REAL+OPERATIONS;FROM+PRODUCT+IDEA+TO+PRODUCTION" alt="Product engineering introduction" />
+## Selected systems
 
-<br/>
-
-<b>AI ENGINEER</b>
-  ×   <b>FULL-STACK PRODUCT BUILDER</b>
-  ×   <b>RYZON LABS</b>
-
-<br/><br/>
-
-<a href="https://www.linkedin.com/in/syed-muhammad-hassaan">
-<img src="https://img.shields.io/badge/LINKEDIN-171C19?style=for-the-badge&logo=linkedin&logoColor=C8FF3D" alt="LinkedIn" />
-</a>
-&nbsp;
-<a href="mailto:sm.hassaan99@gmail.com">
-<img src="https://img.shields.io/badge/EMAIL-171C19?style=for-the-badge&logo=gmail&logoColor=C8FF3D" alt="Email" />
-</a>
-&nbsp;
-<a href="https://ryzonlabs.com">
-<img src="https://img.shields.io/badge/RYZON_LABS-171C19?style=for-the-badge&logo=vercel&logoColor=C8FF3D" alt="Ryzon Labs" />
-</a>
-&nbsp;
-<img src="https://komarev.com/ghpvc/?username=Brxerq&style=for-the-badge&color=C8FF3D&labelColor=171C19&label=PROFILE+VISITS" alt="Profile visits" />
-
-</div>
-
-<br/>
-
-```console
-hassaan@product-engineering:~$ whoami
-
-Product engineer building AI-powered systems for real businesses.
-
-Not isolated demos.
-Not innovation theatre.
-Software that enters production, handles complexity, and creates measurable value.
-```
-
-<br/>
-
-## THE WORK
-
-I'm a Computer Science graduate from Swinburne University of Technology, with a dual major in **Data Science** and **Artificial Intelligence**.
-
-At **Ryzon Labs**, I design and ship intelligent products that operate inside real businesses—not isolated experiments or disconnected AI features.
-
-My work connects conversational interfaces, intelligent decision-making, operational tools, and production infrastructure into complete systems.
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="25%">
-<h3>LISTEN</h3>
-Voice, SMS and conversational interfaces
-</td>
-<td align="center" width="25%">
-<h3>UNDERSTAND</h3>
-LLMs, retrieval, memory and decision logic
-</td>
-<td align="center" width="25%">
-<h3>EXECUTE</h3>
-Tools, APIs, workflows and automation
-</td>
-<td align="center" width="25%">
-<h3>OPERATE</h3>
-Reliable platforms built for real usage
-</td>
-</tr>
-</table>
-
-</div>
-
-<br/>
-
-## SELECTED SYSTEMS
-
-<table>
-<tr>
-
-<td width="50%" valign="top">
-
-### 01 · [AERLOU](https://aerlou.com)
-
-**The AI front desk that keeps businesses reachable.**
-
-Aerlou handles inbound calls and SMS around the clock. It understands why someone is calling, answers questions, books appointments on live calendars, routes conversations, and synchronizes transcripts with business CRMs.
-
-`VOICE AI` `SMS` `CALENDARS` `CRM` `AUTOMATION`
-
-<br/>
-
+<p>
 <a href="https://aerlou.com">
-<img src="https://img.shields.io/badge/VIEW_LIVE-C8FF3D?style=flat-square&logo=googlechrome&logoColor=090C0B" alt="View Aerlou" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aerlou-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/aerlou-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/aerlou-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/aerlou-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aerlou-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/aerlou-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/aerlou-dark.svg">
+  <img src="assets/aerlou-light.svg" alt="Aerlou. An AI front desk that keeps businesses reachable. Inbound calls and SMS, appointment booking, conversation routing and CRM sync." width="100%">
+</picture>
 </a>
+</p>
 
-</td>
-
-<td width="50%" valign="top">
-
-### 02 · [AERLOU CHAT](https://chat.aerlou.com)
-
-**A personal operating system delivered through WhatsApp.**
-
-Aerlou Chat gives users an intelligent assistant without introducing another application. It remembers context, creates reminders, summarizes documents, manages tasks, tracks expenses, and organizes everyday administrative work.
-
-`WHATSAPP AI` `MEMORY` `DOCUMENTS` `TASKS` `AUTOMATION`
-
-<br/>
-
+<p>
 <a href="https://chat.aerlou.com">
-<img src="https://img.shields.io/badge/VIEW_LIVE-C8FF3D?style=flat-square&logo=googlechrome&logoColor=090C0B" alt="View Aerlou Chat" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aerlou-chat-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/aerlou-chat-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/aerlou-chat-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/aerlou-chat-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aerlou-chat-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/aerlou-chat-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/aerlou-chat-dark.svg">
+  <img src="assets/aerlou-chat-light.svg" alt="Aerlou Chat. An everyday assistant. Right inside WhatsApp. Context, reminders, documents, tasks and expenses without another app." width="49%">
+</picture>
 </a>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" valign="top">
-
-### 03 · [HIRE JORDY](https://hirejordy.com)
-
-**An autonomous outbound engine built to create pipeline.**
-
-Hire Jordy researches markets and prospects, develops go-to-market positioning, creates personalized campaigns, executes email and LinkedIn outreach, and moves qualified conversations toward booked meetings.
-
-`AI AGENTS` `PROSPECT RESEARCH` `GTM` `EMAIL` `LINKEDIN`
-
-<br/>
-
 <a href="https://hirejordy.com">
-<img src="https://img.shields.io/badge/VIEW_LIVE-C8FF3D?style=flat-square&logo=googlechrome&logoColor=090C0B" alt="View Hire Jordy" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hire-jordy-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hire-jordy-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hire-jordy-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hire-jordy-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hire-jordy-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/hire-jordy-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hire-jordy-dark.svg">
+  <img src="assets/hire-jordy-light.svg" alt="Hire Jordy. From prospect research to qualified conversations. Market research, campaign creation and personalized email and LinkedIn outreach." width="49%">
+</picture>
 </a>
+</p>
 
-</td>
-
-<td width="50%" valign="top">
-
-### 04 · [ZAOFI](https://zaofi.com)
-
-**Financial intelligence without the market noise.**
-
-ZaoFi tracks whale activity, insider transactions, and Congressional trades. It connects fragmented market signals into explainable conviction scores, helping investors understand what is happening and why it may matter.
-
-`FINTECH` `MARKET DATA` `SIGNAL ANALYSIS` `SCORING` `RESEARCH`
-
-<br/>
-
+<p>
 <a href="https://zaofi.com">
-<img src="https://img.shields.io/badge/VIEW_LIVE-C8FF3D?style=flat-square&logo=googlechrome&logoColor=090C0B" alt="View ZaoFi" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/zaofi-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/zaofi-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/zaofi-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/zaofi-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/zaofi-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/zaofi-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/zaofi-dark.svg">
+  <img src="assets/zaofi-light.svg" alt="ZaoFi. Market signals, connected and explained. Whale activity, insider transactions and Congressional trades in context." width="49%">
+</picture>
 </a>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%" valign="top">
-
-### 05 · [ENDIFAA](https://www.endifaa.com)
-
-**A discovery layer for the Saudi sports ecosystem.**
-
-Endifaa helps athletes and families discover, compare, and connect with academies, programs, and sporting opportunities across Saudi Arabia.
-
-`SPORTS TECH` `DISCOVERY` `MARKETPLACE` `SEARCH` `SAUDI ARABIA`
-
-<br/>
-
 <a href="https://www.endifaa.com">
-<img src="https://img.shields.io/badge/VIEW_LIVE-C8FF3D?style=flat-square&logo=googlechrome&logoColor=090C0B" alt="View Endifaa" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/endifaa-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/endifaa-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/endifaa-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/endifaa-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/endifaa-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/endifaa-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/endifaa-dark.svg">
+  <img src="assets/endifaa-light.svg" alt="Endifaa. A discovery layer for Saudi sport. Helping athletes and families find academies, programs and sporting opportunities." width="49%">
+</picture>
 </a>
+</p>
 
-</td>
-
-<td width="50%" valign="top">
-
-### 06 · [GLOBAL HEALTH](https://myglobalhealth.online)
-
-**Digital healthcare infrastructure across European markets.**
-
-Global Health connects patients with consultations, specialists, prescriptions, memberships, payments, and medical workflows through one localized platform designed for multi-country healthcare operations.
-
-`HEALTHTECH` `TELEMEDICINE` `PAYMENTS` `PATIENT WORKFLOWS` `MULTI-MARKET`
-
-<br/>
-
+<p>
 <a href="https://myglobalhealth.online">
-<img src="https://img.shields.io/badge/VIEW_LIVE-C8FF3D?style=flat-square&logo=googlechrome&logoColor=090C0B" alt="View Global Health" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/global-health-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/global-health-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/global-health-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/global-health-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/global-health-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/global-health-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/global-health-dark.svg">
+  <img src="assets/global-health-light.svg" alt="Global Health. Connected care. Across European markets. Consultations, specialists, prescriptions, memberships and medical workflows." width="100%">
+</picture>
 </a>
+</p>
 
-</td>
+<details>
+<summary><b>Inside the products — capabilities and context</b></summary>
 
-</tr>
-</table>
+### [Aerlou](https://aerlou.com)
 
-<br/>
+Aerlou handles inbound calls and SMS around the clock. It understands why someone is calling, answers questions, books appointments on live calendars, routes conversations and synchronizes transcripts with business CRMs.
 
-## ENGINEERING RANGE
+### [Aerlou Chat](https://chat.aerlou.com)
 
-<div align="center">
+Aerlou Chat brings an intelligent assistant into WhatsApp. It remembers context, creates reminders, summarizes documents, manages tasks, tracks expenses and organizes everyday administrative work.
 
-<img src="https://img.shields.io/badge/VOICE_AI-111513?style=for-the-badge&logo=soundcharts&logoColor=C8FF3D" alt="Voice AI" />
-<img src="https://img.shields.io/badge/AI_AGENTS-111513?style=for-the-badge&logo=probot&logoColor=C8FF3D" alt="AI Agents" />
-<img src="https://img.shields.io/badge/RAG_SYSTEMS-111513?style=for-the-badge&logo=databricks&logoColor=C8FF3D" alt="RAG Systems" />
-<img src="https://img.shields.io/badge/CONVERSATION_DESIGN-111513?style=for-the-badge&logo=wechat&logoColor=C8FF3D" alt="Conversation Design" />
+### [Hire Jordy](https://hirejordy.com)
 
-<br/>
+Hire Jordy researches markets and prospects, develops go-to-market positioning, creates personalized campaigns, executes email and LinkedIn outreach and moves qualified conversations toward booked meetings.
 
-<img src="https://img.shields.io/badge/PRODUCT_ENGINEERING-111513?style=for-the-badge&logo=stackblitz&logoColor=C8FF3D" alt="Product Engineering" />
-<img src="https://img.shields.io/badge/WORKFLOW_AUTOMATION-111513?style=for-the-badge&logo=n8n&logoColor=C8FF3D" alt="Workflow Automation" />
-<img src="https://img.shields.io/badge/PLATFORM_ARCHITECTURE-111513?style=for-the-badge&logo=blueprint&logoColor=C8FF3D" alt="Platform Architecture" />
-<img src="https://img.shields.io/badge/PRODUCTION_DELIVERY-111513?style=for-the-badge&logo=rocket&logoColor=C8FF3D" alt="Production Delivery" />
+### [ZaoFi](https://zaofi.com)
 
-</div>
+ZaoFi tracks whale activity, insider transactions and Congressional trades. It connects fragmented market signals into explainable conviction scores, helping investors understand what is happening and why it may matter.
 
-<br/>
+### [Endifaa](https://www.endifaa.com)
 
-## TOOLCHAIN
+Endifaa helps athletes and families discover, compare and connect with academies, programs and sporting opportunities across Saudi Arabia.
 
-<div align="center">
+### [Global Health](https://myglobalhealth.online)
 
-### Core Engineering
+Global Health connects patients with consultations, specialists, prescriptions, memberships, payments and medical workflows through one localized platform designed for multi-country healthcare operations.
 
-<img src="https://skillicons.dev/icons?i=python,ts,js,react,nextjs,django,flutter&theme=dark" alt="Core engineering technologies" />
+</details>
 
-<br/>
+## How I build
 
-### Intelligence and Data
+<p>
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/approach-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/approach-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/approach-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/approach-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/approach-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/approach-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/approach-dark.svg">
+  <img src="assets/approach-light.svg" alt="Built as one system. Listen: voice and conversation. Understand: context, retrieval and memory. Execute: tools, APIs and workflows. Operate: reliability and observability." width="100%">
+</picture>
+</p>
 
-<img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,postgres,mysql&theme=dark" alt="AI and data technologies" />
+Start with the operational problem. Connect intelligence to context and tools. Design for real workflows, edge cases and fallbacks. Measure, learn and improve after deployment.
 
-<br/>
+<details>
+<summary><b>Toolchain</b> — engineering, intelligence and infrastructure</summary>
 
-### Infrastructure
+**Core engineering**  
+`Python` · `TypeScript` · `JavaScript` · `React` · `Next.js` · `Django` · `Flutter`
 
-<img src="https://skillicons.dev/icons?i=docker,aws,linux,git,github,vercel&theme=dark" alt="Infrastructure technologies" />
+**Intelligence & data**  
+`PyTorch` · `TensorFlow` · `OpenCV` · `PostgreSQL` · `MySQL`
 
-</div>
+**Infrastructure**  
+`Docker` · `AWS` · `Linux` · `Git` · `GitHub` · `Vercel`
 
-<br/>
+</details>
 
-## ENGINEERING PRINCIPLES
+<details>
+<summary><b>Background & engineering principles</b></summary>
+
+I'm a Computer Science graduate from **Swinburne University of Technology**, with a dual major in **Data Science** and **Artificial Intelligence**.
 
 ```yaml
 product:
@@ -274,44 +193,28 @@ deployment:
   next_step: measure, learn and improve
 ```
 
-<br/>
+</details>
 
-## BUILD ACTIVITY
+<br>
 
-<div align="center">
-
-<img width="72%" src="https://streak-stats.demolab.com?user=Brxerq&hide_border=true&background=0C100E&ring=C8FF3D&fire=C8FF3D&currStreakLabel=C8FF3D&sideLabels=AAB4AE&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=66706B" alt="GitHub contribution streak" />
-
-<br/><br/>
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Brxerq&bg_color=0C100E&color=AAB4AE&line=C8FF3D&point=FFFFFF&area=true&area_color=33441F&hide_border=true&custom_title=BUILD%20ACTIVITY" alt="GitHub contribution activity" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-## LET'S BUILD SOMETHING THAT WORKS
-
-The most interesting AI products are not the ones that merely respond.
-
-They understand context, interact with real systems, handle uncertainty, and move work forward.
-
-<br/>
-
+<p>
 <a href="mailto:sm.hassaan99@gmail.com">
-<img src="https://img.shields.io/badge/START_A_CONVERSATION-C8FF3D?style=for-the-badge&logo=gmail&logoColor=090C0B" alt="Start a conversation" />
+<picture>
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/connect-mobile-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/connect-mobile-light-still.svg">
+  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/connect-dark-still.svg">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/connect-light-still.svg">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/connect-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/connect-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/connect-dark.svg">
+  <img src="assets/connect-light.svg" alt="Put a good idea to work. Start a conversation with Hassaan at sm.hassaan99@gmail.com." width="100%">
+</picture>
 </a>
-&nbsp;
-<a href="https://ryzonlabs.com">
-<img src="https://img.shields.io/badge/BUILD_WITH_RYZON_LABS-C8FF3D?style=for-the-badge&logo=vercel&logoColor=090C0B" alt="Build with Ryzon Labs" />
-</a>
+</p>
 
-<br/><br/>
-
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=14&duration=1500&pause=450&color=7E8983&center=true&vCenter=true&width=800&height=40&lines=LISTEN.;UNDERSTAND.;DECIDE.;EXECUTE.;IMPROVE." alt="System lifecycle animation" />
-
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=125&section=footer&color=0:090C0B,45:262D29,78:3F4A43,100:C8FF3D" width="100%" alt="" />
+<p align="center">
+  <a href="mailto:sm.hassaan99@gmail.com">Email</a> &nbsp; / &nbsp;
+  <a href="https://ryzonlabs.com">Ryzon Labs</a> &nbsp; / &nbsp;
+  <a href="https://www.linkedin.com/in/syed-muhammad-hassaan">LinkedIn</a> &nbsp; / &nbsp;
+  <a href="https://github.com/Brxerq?tab=overview">GitHub activity</a>
+</p>
