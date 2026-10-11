@@ -24,7 +24,7 @@ from fontTools.varLib import instancer
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FONTS = ROOT / "scripts" / "fonts"
-OUT = ROOT / "assets"
+OUT = ROOT / "art"
 OFL = "https://raw.githubusercontent.com/google/fonts/main/ofl/"
 SOURCES = {
     "Unbounded.ttf": OFL + "unbounded/Unbounded%5Bwght%5D.ttf",

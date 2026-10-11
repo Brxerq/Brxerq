@@ -8,10 +8,10 @@ MAIL = "mailto:sm.hassaan99@gmail.com"
 
 def pic(slug, alt, href=None):
     s = f"""<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/{slug}-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/{slug}-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/{slug}-dark.svg">
-  <img src="assets/{slug}-light.svg" alt="{alt}" width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/{slug}-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/{slug}-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/{slug}-dark.svg">
+  <img src="art/{slug}-light.svg" alt="{alt}" width="100%">
 </picture>"""
     if href:
         s = f'<a href="{href}">\n{s}\n</a>'

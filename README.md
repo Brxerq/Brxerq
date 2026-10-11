@@ -1,10 +1,10 @@
 <p>
 <a href="https://brxerq.github.io/app/">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/hero-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img src="assets/hero-light.svg" alt="Syed Muhammad Hassaan. AI engineer and full-stack developer in Karachi. Clients in 12 countries, 13 products and sites shipped." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/hero-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/hero-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/hero-dark.svg">
+  <img src="art/hero-light.svg" alt="Syed Muhammad Hassaan. AI engineer and full-stack developer in Karachi. Clients in 12 countries, 13 products and sites shipped." width="100%">
 </picture>
 </a>
 </p>
@@ -22,10 +22,10 @@ I design and build AI products, web platforms and automation for startups and bu
 <p>
 <a href="https://brxerq.github.io/app/">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/clients-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/clients-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/clients-dark.svg">
-  <img src="assets/clients-light.svg" alt="Clients in 12 countries, plotted by bearing and distance from Karachi: UAE, Saudi Arabia, Singapore, Malaysia, Hong Kong, Czechia, Norway, Ireland, Spain, Portugal, Brazil and USA." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/clients-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/clients-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/clients-dark.svg">
+  <img src="art/clients-light.svg" alt="Clients in 12 countries, plotted by bearing and distance from Karachi: UAE, Saudi Arabia, Singapore, Malaysia, Hong Kong, Czechia, Norway, Ireland, Spain, Portugal, Brazil and USA." width="100%">
 </picture>
 </a>
 </p>
@@ -37,10 +37,10 @@ Five products I designed and built: four for clients and one of my own. All are 
 <p>
 <a href="https://www.myglobalhealth.online/">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/global-health-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/global-health-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/global-health-dark.svg">
-  <img src="assets/global-health-light.svg" alt="Global Health. Online doctor visits in six countries. Lead software engineer since Dec 2025." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/global-health-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/global-health-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/global-health-dark.svg">
+  <img src="art/global-health-light.svg" alt="Global Health. Online doctor visits in six countries. Lead software engineer since Dec 2025." width="100%">
 </picture>
 </a>
 </p>
@@ -48,10 +48,10 @@ Five products I designed and built: four for clients and one of my own. All are 
 <p>
 <a href="https://hirejordy.com/">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/jordy-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/jordy-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/jordy-dark.svg">
-  <img src="assets/jordy-light.svg" alt="Jordy. An AI sales rep that finds buyers and books meetings. Co-founder since Mar 2026." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/jordy-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/jordy-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/jordy-dark.svg">
+  <img src="art/jordy-light.svg" alt="Jordy. An AI sales rep that finds buyers and books meetings. Co-founder since Mar 2026." width="100%">
 </picture>
 </a>
 </p>
@@ -59,10 +59,10 @@ Five products I designed and built: four for clients and one of my own. All are 
 <p>
 <a href="https://aertonic.com/">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aertonic-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/aertonic-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/aertonic-dark.svg">
-  <img src="assets/aertonic-light.svg" alt="Aertonic. Books qualified B2B sales meetings and only charges for the ones that happen. Founding engineer since Nov 2025." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/aertonic-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/aertonic-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/aertonic-dark.svg">
+  <img src="art/aertonic-light.svg" alt="Aertonic. Books qualified B2B sales meetings and only charges for the ones that happen. Founding engineer since Nov 2025." width="100%">
 </picture>
 </a>
 </p>
@@ -70,10 +70,10 @@ Five products I designed and built: four for clients and one of my own. All are 
 <p>
 <a href="https://endifaa.com/">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/endifaa-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/endifaa-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/endifaa-dark.svg">
-  <img src="assets/endifaa-light.svg" alt="Endifaa. A sports-academy platform in English and Arabic. Full-stack developer, Oct 2025 to Jun 2026." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/endifaa-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/endifaa-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/endifaa-dark.svg">
+  <img src="art/endifaa-light.svg" alt="Endifaa. A sports-academy platform in English and Arabic. Full-stack developer, Oct 2025 to Jun 2026." width="100%">
 </picture>
 </a>
 </p>
@@ -81,10 +81,10 @@ Five products I designed and built: four for clients and one of my own. All are 
 <p>
 <a href="https://zaofi.com/">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/zaofi-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/zaofi-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/zaofi-dark.svg">
-  <img src="assets/zaofi-light.svg" alt="Zao Fi. A stock AI that turns whale, insider and Congress trades into a 0 to 100 conviction score. My own product." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/zaofi-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/zaofi-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/zaofi-dark.svg">
+  <img src="art/zaofi-light.svg" alt="Zao Fi. A stock AI that turns whale, insider and Congress trades into a 0 to 100 conviction score. My own product." width="100%">
 </picture>
 </a>
 </p>
@@ -120,10 +120,10 @@ Five products I designed and built: four for clients and one of my own. All are 
 
 <p>
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/experience-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/experience-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg">
-  <img src="assets/experience-light.svg" alt="Experience timeline: Jordy, co-founder since Mar 2026. Global Health, lead software engineer since Dec 2025. Aertonic, founding engineer since Nov 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Stackloom, AI and prompt engineer Jan to Sep 2025. Freelance since Jul 2024. Quest Marketing, lead AI and software engineer Mar to Dec 2024." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/experience-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/experience-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/experience-dark.svg">
+  <img src="art/experience-light.svg" alt="Experience timeline: Jordy, co-founder since Mar 2026. Global Health, lead software engineer since Dec 2025. Aertonic, founding engineer since Nov 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Stackloom, AI and prompt engineer Jan to Sep 2025. Freelance since Jul 2024. Quest Marketing, lead AI and software engineer Mar to Dec 2024." width="100%">
 </picture>
 </p>
 
@@ -152,20 +152,20 @@ Five products I designed and built: four for clients and one of my own. All are 
 
 <p>
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/stack-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/stack-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img src="assets/stack-light.svg" alt="Stack. Languages: Python, TypeScript, C++, Dart. AI and data: TensorFlow, PyTorch, OpenCV, LLMs and NLP, Hugging Face. Frameworks: React, Django and DRF, FastAPI, Flutter. Backend and infra: PostgreSQL, MySQL, Docker, AWS, RabbitMQ." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/stack-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/stack-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/stack-dark.svg">
+  <img src="art/stack-light.svg" alt="Stack. Languages: Python, TypeScript, C++, Dart. AI and data: TensorFlow, PyTorch, OpenCV, LLMs and NLP, Hugging Face. Frameworks: React, Django and DRF, FastAPI, Flutter. Backend and infra: PostgreSQL, MySQL, Docker, AWS, RabbitMQ." width="100%">
 </picture>
 </p>
 
 <p>
 <a href="mailto:sm.hassaan99@gmail.com">
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/contact-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/contact-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg">
-  <img src="assets/contact-light.svg" alt="Let's talk. Email sm.hassaan99@gmail.com. I reply within about a day." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/contact-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/contact-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/contact-dark.svg">
+  <img src="art/contact-light.svg" alt="Let's talk. Email sm.hassaan99@gmail.com. I reply within about a day." width="100%">
 </picture>
 </a>
 </p>
