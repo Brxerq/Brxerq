@@ -1,220 +1,178 @@
 <p>
+<a href="https://brxerq.github.io/app/">
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hero-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hero-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hero-light-still.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hero-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/hero-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img src="assets/hero-light.svg" alt="Hassaan. Conversations in. Real work out. AI engineer and full-stack product builder at Ryzon Labs." width="100%">
+  <img src="assets/hero-light.svg" alt="Syed Muhammad Hassaan. AI engineer and full-stack developer in Karachi. Clients in 12 countries, 13 products and sites shipped." width="100%">
 </picture>
+</a>
 </p>
 
 <p align="center">
-  <b>Syed Muhammad Hassaan Bin Ghayas</b><br>
-  AI Engineer · Full-stack Product Builder · Ryzon Labs
+  <a href="https://brxerq.github.io/app/"><b>Portfolio ↗</b></a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/syed-muhammad-hassaan/"><b>LinkedIn ↗</b></a> &nbsp;·&nbsp;
+  <a href="https://ryzonlabs.com"><b>Ryzon Labs ↗</b></a> &nbsp;·&nbsp;
+  <a href="https://ryzuntech.com/"><b>RyzunTech ↗</b></a> &nbsp;·&nbsp;
+  <a href="mailto:sm.hassaan99@gmail.com"><b>Email ↗</b></a>
 </p>
 
-<p align="center">
-  <a href="https://ryzonlabs.com"><b>Ryzon Labs ↗</b></a> &nbsp; · &nbsp;
-  <a href="https://www.linkedin.com/in/syed-muhammad-hassaan"><b>LinkedIn ↗</b></a> &nbsp; · &nbsp;
-  <a href="mailto:sm.hassaan99@gmail.com"><b>Get in touch ↗</b></a>
-</p>
-
-I build AI-powered systems for real business workflows, connecting conversational interfaces, intelligent decision-making, operational tools and production infrastructure into complete products.
-
-## Selected systems
+I design and build AI products, web platforms and automation for startups and businesses around the world: AI agents and chatbots, web apps and platforms, workflow automation, and websites built to rank.
 
 <p>
-<a href="https://aerlou.com">
+<a href="https://brxerq.github.io/app/">
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aerlou-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/aerlou-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/aerlou-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/aerlou-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aerlou-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/aerlou-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/aerlou-dark.svg">
-  <img src="assets/aerlou-light.svg" alt="Aerlou. An AI front desk that keeps businesses reachable. Inbound calls and SMS, appointment booking, conversation routing and CRM sync." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/clients-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/clients-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/clients-dark.svg">
+  <img src="assets/clients-light.svg" alt="Clients in 12 countries, plotted by bearing and distance from Karachi: UAE, Saudi Arabia, Singapore, Malaysia, Hong Kong, Czechia, Norway, Ireland, Spain, Portugal, Brazil and USA." width="100%">
 </picture>
 </a>
 </p>
 
-<p>
-<a href="https://chat.aerlou.com">
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aerlou-chat-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/aerlou-chat-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/aerlou-chat-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/aerlou-chat-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aerlou-chat-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/aerlou-chat-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/aerlou-chat-dark.svg">
-  <img src="assets/aerlou-chat-light.svg" alt="Aerlou Chat. An everyday assistant. Right inside WhatsApp. Context, reminders, documents, tasks and expenses without another app." width="49%">
-</picture>
-</a>
-<a href="https://hirejordy.com">
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hire-jordy-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/hire-jordy-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/hire-jordy-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/hire-jordy-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/hire-jordy-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/hire-jordy-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hire-jordy-dark.svg">
-  <img src="assets/hire-jordy-light.svg" alt="Hire Jordy. From prospect research to qualified conversations. Market research, campaign creation and personalized email and LinkedIn outreach." width="49%">
-</picture>
-</a>
-</p>
+## Selected projects
+
+Five products I designed and built: four for clients and one of my own. All are live. Click a card to visit.
 
 <p>
-<a href="https://zaofi.com">
+<a href="https://www.myglobalhealth.online/">
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/zaofi-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/zaofi-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/zaofi-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/zaofi-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/zaofi-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/zaofi-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/zaofi-dark.svg">
-  <img src="assets/zaofi-light.svg" alt="ZaoFi. Market signals, connected and explained. Whale activity, insider transactions and Congressional trades in context." width="49%">
-</picture>
-</a>
-<a href="https://www.endifaa.com">
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/endifaa-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/endifaa-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/endifaa-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/endifaa-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/endifaa-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/endifaa-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/endifaa-dark.svg">
-  <img src="assets/endifaa-light.svg" alt="Endifaa. A discovery layer for Saudi sport. Helping athletes and families find academies, programs and sporting opportunities." width="49%">
-</picture>
-</a>
-</p>
-
-<p>
-<a href="https://myglobalhealth.online">
-<picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/global-health-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/global-health-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/global-health-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/global-health-light-still.svg">
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/global-health-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="assets/global-health-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/global-health-dark.svg">
-  <img src="assets/global-health-light.svg" alt="Global Health. Connected care. Across European markets. Consultations, specialists, prescriptions, memberships and medical workflows." width="100%">
+  <img src="assets/global-health-light.svg" alt="Global Health. Online doctor visits in six countries. Lead software engineer since Dec 2025." width="100%">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://hirejordy.com/">
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/jordy-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/jordy-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/jordy-dark.svg">
+  <img src="assets/jordy-light.svg" alt="Jordy. An AI sales rep that finds buyers and books meetings. Co-founder since Mar 2026." width="100%">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://aertonic.com/">
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/aertonic-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/aertonic-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/aertonic-dark.svg">
+  <img src="assets/aertonic-light.svg" alt="Aertonic. Books qualified B2B sales meetings and only charges for the ones that happen. Founding engineer since Nov 2025." width="100%">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://endifaa.com/">
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/endifaa-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/endifaa-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/endifaa-dark.svg">
+  <img src="assets/endifaa-light.svg" alt="Endifaa. A sports-academy platform in English and Arabic. Full-stack developer, Oct 2025 to Jun 2026." width="100%">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://zaofi.com/">
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/zaofi-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/zaofi-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/zaofi-dark.svg">
+  <img src="assets/zaofi-light.svg" alt="Zao Fi. A stock AI that turns whale, insider and Congress trades into a 0 to 100 conviction score. My own product." width="100%">
 </picture>
 </a>
 </p>
 
 <details>
-<summary><b>Inside the products — capabilities and context</b></summary>
+<summary><b>Other work</b> · product sites, client sites and an AI CRM</summary>
+<br>
 
-### [Aerlou](https://aerlou.com)
-
-Aerlou handles inbound calls and SMS around the clock. It understands why someone is calling, answers questions, books appointments on live calendars, routes conversations and synchronizes transcripts with business CRMs.
-
-### [Aerlou Chat](https://chat.aerlou.com)
-
-Aerlou Chat brings an intelligent assistant into WhatsApp. It remembers context, creates reminders, summarizes documents, manages tasks, tracks expenses and organizes everyday administrative work.
-
-### [Hire Jordy](https://hirejordy.com)
-
-Hire Jordy researches markets and prospects, develops go-to-market positioning, creates personalized campaigns, executes email and LinkedIn outreach and moves qualified conversations toward booked meetings.
-
-### [ZaoFi](https://zaofi.com)
-
-ZaoFi tracks whale activity, insider transactions and Congressional trades. It connects fragmented market signals into explainable conviction scores, helping investors understand what is happening and why it may matter.
-
-### [Endifaa](https://www.endifaa.com)
-
-Endifaa helps athletes and families discover, compare and connect with academies, programs and sporting opportunities across Saudi Arabia.
-
-### [Global Health](https://myglobalhealth.online)
-
-Global Health connects patients with consultations, specialists, prescriptions, memberships, payments and medical workflows through one localized platform designed for multi-country healthcare operations.
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [Aerlou](https://aerlou.com/) | Product site for an AI receptionist that answers calls and texts, books appointments and syncs transcripts to the CRM | Voice AI · CRM |
+| [aerlou for WhatsApp](https://chat.aerlou.com/) | Landing page and app surface for a WhatsApp assistant that files voice notes, receipts and reminders | LLMs · WhatsApp |
+| [RyzunTech](https://ryzuntech.com/) | The Dubai software and AI studio where I work with a friend | Next.js · SEO |
+| [Asia Pacific Dental](https://apdc.com.sg/) | In-person and virtual booking, service pages and local SEO for a Singapore dental group | Booking · Local SEO |
+| [Zen Sea Yacht](https://www.zenseayacht.com.sg/) | Charter site built around fleet pages and an enquiry flow | Enquiry flow · SEO |
+| [J Hair Salon](https://jhair.sg/) | Salon site with booking and service listings | Booking · SEO |
+| [Surplus Alliance](https://surplusalliancehk.com/en) | Corporate site for a Hong Kong investment holding company | Corporate · Multilingual |
+| Sales Navigator CRM | AI CRM on Google Play for Quest Marketing, used by 50+ people. It cut the team's manual work by 40% | Flutter · Python · OpenAI API |
 
 </details>
 
-## How I build
+<details>
+<summary><b>AI experiments</b> · live demos on Hugging Face</summary>
+<br>
+
+| | Experiment | Built with |
+| --- | --- | --- |
+| May 2024 | **Shelf monitoring.** Real-time out-of-stock and misalignment detection for supermarket shelves, trained on 1,000 annotated images. [Live demo](https://huggingface.co/spaces/brxerq/ShelvesDetection) · [Code](https://github.com/Brxerq/Super-Market_Shelves_Detection_Object-Detection) | TensorFlow · SSD MobileNet V2 |
+| Dec 2023 | **Face attendance with anti-spoofing.** Accepts only a live person: blink analysis, a hand-gesture check, phone detection and skin-texture analysis. [Live demo](https://huggingface.co/spaces/brxerq/anti-spoofing) | OpenCV · Dlib · YOLOv4 · MediaPipe |
+| Mar 2023 | **Bird species classification.** 200 species from CUB-200, from a baseline CNN to a fine-tuned MobileNetV3. [Live demo](https://huggingface.co/spaces/brxerq/Bird_Classification) | TensorFlow · MobileNetV3 |
+
+</details>
 
 <p>
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/approach-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/approach-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/approach-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/approach-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/approach-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/approach-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/approach-dark.svg">
-  <img src="assets/approach-light.svg" alt="Built as one system. Listen: voice and conversation. Understand: context, retrieval and memory. Execute: tools, APIs and workflows. Operate: reliability and observability." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/experience-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/experience-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/experience-dark.svg">
+  <img src="assets/experience-light.svg" alt="Experience timeline: Jordy, co-founder since Mar 2026. Global Health, lead software engineer since Dec 2025. Aertonic, founding engineer since Nov 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Stackloom, AI and prompt engineer Jan to Sep 2025. Freelance since Jul 2024. Quest Marketing, lead AI and software engineer Mar to Dec 2024." width="100%">
 </picture>
 </p>
 
-Start with the operational problem. Connect intelligence to context and tools. Design for real workflows, edge cases and fallbacks. Measure, learn and improve after deployment.
-
 <details>
-<summary><b>Toolchain</b> — engineering, intelligence and infrastructure</summary>
-
-**Core engineering**  
-`Python` · `TypeScript` · `JavaScript` · `React` · `Next.js` · `Django` · `Flutter`
-
-**Intelligence & data**  
-`PyTorch` · `TensorFlow` · `OpenCV` · `PostgreSQL` · `MySQL`
-
-**Infrastructure**  
-`Docker` · `AWS` · `Linux` · `Git` · `GitHub` · `Vercel`
-
-</details>
-
-<details>
-<summary><b>Background & engineering principles</b></summary>
-
-I'm a Computer Science graduate from **Swinburne University of Technology**, with a dual major in **Data Science** and **Artificial Intelligence**.
-
-```yaml
-product:
-  start_with: the operational problem
-  optimize_for: measurable business value
-
-intelligence:
-  connect_to: context, data and tools
-  protect_with: boundaries, fallbacks and observability
-
-engineering:
-  design_for: real workflows and edge cases
-  ship_when: the system can survive real usage
-
-deployment:
-  is_not: the finish line
-  next_step: measure, learn and improve
-```
-
-</details>
-
+<summary><b>Education & certifications</b></summary>
 <br>
+
+**Swinburne University of Technology** · Bachelor of Computer Science, dual major in Data Science & AI · 2021 – 2024
+**Swinburne University of Technology, Sarawak** · Foundation, Information Technology / Multimedia · 2020 – 2021
+
+- **Getting Started with AI on Jetson Nano** · NVIDIA · Aug 2025
+- **Building RAG Agents with LLMs** · NVIDIA · Aug 2025
+- **Fundamentals of Digital Marketing** · Google Digital Garage · Jul 2022
+- **Cisco Certified Network Associate (CCNA)** · Cisco · Nov 2021
+
+</details>
+
+## Activity
+
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-dark.svg">
+  <img src="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-light.svg" alt="My GitHub contributions over the past year, redrawn every day." width="100%">
+</picture>
+</p>
+
+<p>
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/stack-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/stack-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
+  <img src="assets/stack-light.svg" alt="Stack. Languages: Python, TypeScript, C++, Dart. AI and data: TensorFlow, PyTorch, OpenCV, LLMs and NLP, Hugging Face. Frameworks: React, Django and DRF, FastAPI, Flutter. Backend and infra: PostgreSQL, MySQL, Docker, AWS, RabbitMQ." width="100%">
+</picture>
+</p>
 
 <p>
 <a href="mailto:sm.hassaan99@gmail.com">
 <picture>
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/connect-mobile-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="assets/connect-mobile-light-still.svg">
-  <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="assets/connect-dark-still.svg">
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/connect-light-still.svg">
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/connect-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/connect-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/connect-dark.svg">
-  <img src="assets/connect-light.svg" alt="Put a good idea to work. Start a conversation with Hassaan at sm.hassaan99@gmail.com." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="assets/contact-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="assets/contact-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg">
+  <img src="assets/contact-light.svg" alt="Let's talk. Email sm.hassaan99@gmail.com. I reply within about a day." width="100%">
 </picture>
 </a>
 </p>
 
 <p align="center">
-  <a href="mailto:sm.hassaan99@gmail.com">Email</a> &nbsp; / &nbsp;
-  <a href="https://ryzonlabs.com">Ryzon Labs</a> &nbsp; / &nbsp;
-  <a href="https://www.linkedin.com/in/syed-muhammad-hassaan">LinkedIn</a> &nbsp; / &nbsp;
-  <a href="https://github.com/Brxerq?tab=overview">GitHub activity</a>
+  <a href="mailto:sm.hassaan99@gmail.com">Email</a> &nbsp;/&nbsp;
+  <a href="https://www.linkedin.com/in/syed-muhammad-hassaan/">LinkedIn</a> &nbsp;/&nbsp;
+  <a href="https://www.instagram.com/ha_ssaann/">Instagram</a> &nbsp;/&nbsp;
+  <a href="https://brxerq.github.io/app/">Portfolio</a>
 </p>
