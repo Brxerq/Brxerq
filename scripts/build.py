@@ -8,7 +8,8 @@ GitHub's <img> sandbox, which blocks web fonts. Facts come from https://hassaan.
     python scripts/readme.py   # README.md
 
 Fonts (SIL OFL) download into scripts/fonts/ on first run.
-scripts/img/ holds the football banner (a picture of the site's hero) and the avatar.
+scripts/img/ holds the stadium, the players and the ball from the site's football game.
+scripts/game/track.json is one recorded stretch of the site's demo match: two goals, then it loops.
 """
 import base64
 import json
@@ -16,6 +17,7 @@ import math
 import re
 import pathlib
 import urllib.request
+from datetime import date
 from xml.sax.saxutils import escape
 
 from fontTools.pens.svgPathPen import SVGPathPen
@@ -77,15 +79,16 @@ class Face:
         return "".join(out)
 
 
-SEMI = MED = BODY = MONO = None
+SEMI = MED = BODY = MONO = MONOB = None
 
 
 def load_fonts():
-    global SEMI, MED, BODY, MONO
+    global SEMI, MED, BODY, MONO, MONOB
     SEMI = Face("Inter.ttf", wght=600, opsz=32)
     MED = Face("Inter.ttf", wght=500, opsz=14)
     BODY = Face("Inter.ttf", wght=400, opsz=14)
     MONO = Face("CascadiaCode.ttf", wght=400)
+    MONOB = Face("CascadiaCode.ttf", wght=700)
 
 
 def T(face, s, x, y, size, fill, ls=0, anchor="start"):
@@ -125,12 +128,12 @@ def hline(t, W, g, y):
     return f'<path d="M{g} {y}H{W - g}" stroke="{t["line"]}"/>'
 
 
-def svg(W, H, t, g, title, body):
+def svg(W, H, t, g, title, body, css=""):
     """The page column: hatched gutters, a hairline down each side."""
     title = escape(title, {'"': "&quot;"})
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="{title}">'
-        f"<title>{title}</title><style>{CSS}</style><defs>"
+        f"<title>{title}</title><style>{css}{CSS}</style><defs>"
         f'<pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">'
         f'<path d="M0 .5H6" stroke="{t["acc"]}" stroke-opacity="{t["hatch"]}"/></pattern>'
         f'<linearGradient id="prism" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{t["acc"]}" stop-opacity=".55"/>'
@@ -209,47 +212,169 @@ def data_uri(file):
     return f"data:{kind};base64," + base64.b64encode((IMG / file).read_bytes()).decode()
 
 
+# ---------------------------------------------------------------- the football game
+
+TRACK = json.loads((ROOT / "scripts" / "game" / "track.json").read_text())  # 30 samples a second
+GW, GROUND = 240, 101            # the game's own units, as in lib/game/config.ts on the site
+VIEW_Y, VIEW_H = 24, 94          # the part of the stadium that shows
+GOLD, BLUE, CREAM, PLATE = "#ffc873", "#76d4ff", "#fff3d6", "#12142a"
+
+
+def game(t, x, y, w, mobile, dark):
+    """The site's demo match as an animated picture: two players, one ball, two goals, then it loops.
+    Positions come from the site's own game rules. Returns (svg, css, height)."""
+    t0 = TRACK[0]["t"]
+    L = TRACK[-1]["t"] - t0 + 1 / 30
+    pct = lambda r: (r["t"] - t0) / L * 100
+
+    def series(get):
+        pts = []
+        for i, r in enumerate(TRACK):
+            if i and TRACK[i - 1]["goal"] and not r["goal"]:  # kick-off: jump there, do not slide
+                pts.append((pct(r) - .01, get(TRACK[i - 1])))
+            pts.append((pct(r), get(r)))
+        return pts + [(100, pts[-1][1])]
+
+    css = []
+
+    def anim(name, get, fmt, step=False):
+        pts = series(get)
+        keep = [(p, v) for i, (p, v) in enumerate(pts)
+                if not (0 < i < len(pts) - 1 and pts[i - 1][1] == v and (step or pts[i + 1][1] == v))]
+        css.append(f"@keyframes {name}{{" + "".join(f"{p:.2f}%{{{fmt(v)}}}" for p, v in keep) + "}"
+                   f".{name}{{animation:{name} {L:.3f}s {'step-end' if step else 'linear'} infinite}}")
+
+    def shown(name, a, b):
+        """Visible only between a% and b% of the loop."""
+        on = f"{a:.2f}%{{opacity:1}}" if a else ""
+        css.append(f"@keyframes {name}{{0%{{opacity:{0 if a else 1}}}{on}{b:.2f}%{{opacity:0}}100%{{opacity:0}}}}"
+                   f".{name}{{animation:{name} {L:.3f}s step-end infinite}}")
+
+    first = TRACK[0]
+    k = w / GW
+    fh = VIEW_H * k
+    px = 'style="image-rendering:pixelated"'
+    out = [f'<image href="{data_uri(f"stadium-{"dark" if dark else "light"}.png")}" width="240" height="120" {px}/>']
+
+    def player(key, kit):
+        """kit: the row of the sprite sheet for this shirt, by the way the player faces."""
+        cell = lambda v: (v[3] % 4, v[3] // 4 + kit(v[2]))
+        anim(f"{key}p", lambda r: tuple(r[key][:2]), lambda v: f"transform:translate({v[0]}px,{v[1]}px)")
+        anim(f"{key}s", lambda r: r[key][0], lambda v: f"transform:translate({v}px,0)")
+        anim(f"{key}d", lambda r: r[key][2], lambda v: f"transform:scaleX({v})", step=True)
+        anim(f"{key}f", lambda r: cell(r[key]), lambda v: f"transform:translate({-28 * v[0]}px,{-28 * v[1]}px)", step=True)
+        x0, y0, d0, _ = first[key]
+        c0 = cell(first[key])
+        return (f'<ellipse class="{key}s" transform="translate({x0} 0)" cy="{GROUND + 2}" rx="8" ry="1.5" fill="#06161c" opacity=".5"/>'
+                f'<g class="{key}p" transform="translate({x0} {y0})"><g class="{key}d" transform="scale({d0} 1)">'
+                f'<svg x="-14" y="-28" width="28" height="28" viewBox="0 0 28 28">'
+                f'<image class="{key}f" transform="translate({-28 * c0[0]} {-28 * c0[1]})" href="{data_uri("players.png")}" width="112" height="336" {px}/>'
+                f'</svg></g></g>')
+
+    out.append(player("c", lambda d: 8 if d < 0 else 0))   # BRXERQ, in red
+    out.append(player("p", lambda d: 4))                    # "You", in blue
+    anim("bb", lambda r: tuple(r["b"]), lambda v: f"transform:translate({v[0]}px,{v[1]}px) rotate({v[2]}deg)")
+    anim("bs", lambda r: r["b"][0], lambda v: f"transform:translate({v}px,0)")
+    bx0, by0, _ = first["b"]
+    out.append(f'<ellipse class="bs" transform="translate({bx0} 0)" cy="{GROUND + 2}" rx="4.5" ry="1.2" fill="#06161c" opacity=".4"/>'
+               f'<g class="bb" transform="translate({bx0} {by0})"><image href="{data_uri("ball.png")}" x="-5.5" y="-5.5" width="11" height="11" {px}/></g>')
+
+    # each goal: the plate above the net, and the score goes up
+    goals, i = [], 0
+    while i < len(TRACK):
+        if TRACK[i]["goal"]:
+            j = i
+            while j + 1 < len(TRACK) and TRACK[j + 1]["goal"]:
+                j += 1
+            goals.append((pct(TRACK[i]), pct(TRACK[j]) + 100 / L / 30, TRACK[i]["last"]))
+            i = j
+        i += 1
+    for n, (a, b, side) in enumerate(goals):
+        tint = GOLD if side < 0 else BLUE
+        gx = 18 if side < 0 else GW - 62
+        shown(f"gl{n}", a, b)
+        out.append(f'<g class="gl{n}" opacity="0"><rect x="{gx}" y="54" width="44" height="13" fill="#1c233b"/>'
+                   f'<rect x="{gx}" y="54" width="44" height="1" fill="{tint}"/>'
+                   + T(MONOB, "GOAL!", gx + 22, 63.6, 8, tint, ls=.6, anchor="middle") + "</g>")
+
+    scene = (f'<clipPath id="pitch"><rect x="{x}" y="{y}" width="{w}" height="{fh:.1f}"/></clipPath>'
+             f'<g clip-path="url(#pitch)"><g transform="translate({x} {y - VIEW_Y * k:.2f}) scale({k:.4f})">{"".join(out)}</g></g>')
+
+    # scoreboard: You 0 | 0:59 | 0 BRXERQ
+    fs = 8 if mobile else 12.5
+    pad, big = fs * .7, fs * 1.3
+    dw = MONOB.width("0", big)
+    cells = [MONOB.width("You", fs) + pad * 3 + dw + 3, MONOB.width("0:00", fs) + pad * 2.4, MONOB.width("BRXERQ", fs) + pad * 3 + dw + 3]
+    sw, sh = sum(cells), fs * 2.3
+    sx, sy = x + (w - sw) / 2, y + (5 if mobile else 10)
+    base = sy + sh / 2 + fs * .36
+    hud = [f'<rect x="{sx - 2:.1f}" y="{sy - 2:.1f}" width="{sw + 4:.1f}" height="{sh + 4:.1f}" fill="#3a3d63" stroke="#0b0d1a"/>'
+           f'<rect x="{sx:.1f}" y="{sy:.1f}" width="{sw:.1f}" height="{sh:.1f}" fill="{PLATE}"/>'
+           f'<rect x="{sx + cells[0]:.1f}" y="{sy:.1f}" width="{cells[1]:.1f}" height="{sh:.1f}" fill="#2b2b48"/>'
+           f'<rect x="{sx:.1f}" y="{sy:.1f}" width="3" height="{sh:.1f}" fill="{BLUE}"/>'
+           f'<rect x="{sx + sw - 3:.1f}" y="{sy:.1f}" width="3" height="{sh:.1f}" fill="{GOLD}"/>',
+           T(MONOB, "You", sx + 3 + pad, base, fs, "#a9e5ff"),
+           T(MONOB, "BRXERQ", sx + sw - 3 - pad, base, fs, "#ffd995", anchor="end")]
+
+    def digits(name, key, dx):
+        """One number per value it takes in the loop; only the current one shows."""
+        runs = []
+        for r in TRACK:
+            if not runs or runs[-1][0] != key(r):
+                runs.append([key(r), pct(r), 100])
+                if len(runs) > 1:
+                    runs[-2][2] = pct(r)
+        for n, (value, a, b) in enumerate(runs):
+            shown(f"{name}{n}", a, b)
+            hud.append(f'<g class="{name}{n}" opacity="{0 if n else 1}">' + T(MONOB, value, dx, base + (big - fs) * .3 if len(value) == 1 else base,
+                                                                         big if len(value) == 1 else fs, CREAM, anchor="middle") + "</g>")
+
+    digits("sp", lambda r: str(r["score"]), sx + cells[0] - pad - dw / 2)
+    digits("sc", lambda r: str(r["cpu"]), sx + cells[0] + cells[1] + pad + dw / 2)
+    digits("ck", lambda r: f"0:{math.ceil(r['time']) - 1:02d}", sx + cells[0] + cells[1] / 2)
+
+    # the bar under the pitch
+    bh = 24 if mobile else 36
+    bs = 8 if mobile else 11
+    by = y + fh
+    bar = (f'<rect x="{x}" y="{by:.1f}" width="{w}" height="{bh}" fill="{PLATE}"/><path d="M{x} {by + .5:.1f}H{x + w}" stroke="#596579"/>'
+           + T(MONOB, "KARACHI ARENA / 1V1", x + (10 if mobile else 18), by + bh / 2 + bs * .36, bs, "#ffd995", ls=bs * .07)
+           + T(MONO, "Play it on hassaan.space", x + w - (10 if mobile else 18) - bs * 1.6, by + bh / 2 + bs * .36, bs, "#c9cfe6", anchor="end")
+           + icon("out", x + w - (10 if mobile else 18) - bs * 1.15, by + bh / 2 - bs * .55, bs * 1.1, "#c9cfe6"))
+    return scene + "".join(hud) + bar, "".join(css), fh + bh
+
+
 # ---------------------------------------------------------------- hero
 
 INTRO = [("code", "Lead Software Engineer @Global Health"), ("pin", "Karachi, Pakistan"),
          ("mail", "sm.hassaan99@gmail.com"), (None, "Available for freelance projects")]
-BANNER_RATIO = 578 / 1652
+ROLE = "AI Engineer · Full-Stack Software Developer"
 
 
 def hero(t, mobile):
     W, g, pad = lay(mobile)
     body = []
-    # the football banner
     bx, by, bw = pad, pad - g, W - 2 * pad
-    bh = round(bw * BANNER_RATIO)
     r = 6 if mobile else 11
-    body.append(f'<clipPath id="bn"><rect x="{bx + 1}" y="{by + 1}" width="{bw - 2}" height="{bh - 2}" rx="{r}"/></clipPath>'
-                f'<image href="{data_uri("banner.png")}" x="{bx}" y="{by}" width="{bw}" height="{bh}" clip-path="url(#bn)" preserveAspectRatio="none"/>'
+    scene, css, bh = game(t, bx, by, bw, mobile, t is THEMES["dark"])
+    bh = round(bh)
+    body.append(f'<clipPath id="bn"><rect x="{bx}" y="{by}" width="{bw}" height="{bh}" rx="{r}"/></clipPath>'
+                f'<g clip-path="url(#bn)">{scene}</g>'
                 f'<rect x="{bx + .5}" y="{by + .5}" width="{bw - 1}" height="{bh - 1}" rx="{r}" fill="none" stroke="{t["frame"]}" stroke-width="2"/>')
     y = by + bh + (pad - g)
     body.append(hline(t, W, g, y + .5))
 
-    # avatar, name, role
-    cell = 104 if mobile else 172          # avatar cell
-    dots, row1, row2 = (40, 34, 30) if mobile else (92, 44, 36)
-    assert dots + row1 + row2 == cell
-    cx, cy, cr = g + cell / 2, y + cell / 2, cell / 2 - 5
-    body.append(f'<clipPath id="av"><circle cx="{cx}" cy="{cy}" r="{cr}"/></clipPath>'
-                f'<circle cx="{cx}" cy="{cy}" r="{cr}" fill="{t["muted"]}"/>'
-                f'<image href="{data_uri("avatar.webp")}" x="{cx - cr}" y="{cy - cr}" width="{2 * cr}" height="{2 * cr}" clip-path="url(#av)"/>'
-                f'<circle cx="{cx}" cy="{cy}" r="{cr}" fill="none" stroke="{t["border"]}"/>'
-                f'<path d="M{g + cell}.5 {y}V{y + cell}" stroke="{t["line"]}"/>')
-    x0 = g + cell
+    # name and role, under a strip of dots as on the site
+    dots, row1, row2 = (26, 36, 30) if mobile else (44, 50, 38)
     body.append(f'<defs><pattern id="dots" width="8" height="8" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r=".9" fill="{t["acc"]}"/></pattern>'
-                f'<linearGradient id="fade" x1="0" x2="1" y1="1" y2="0"><stop offset=".25" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".55"/></linearGradient>'
-                f'<mask id="dm"><rect x="{x0}" y="{y}" width="{W - g - x0}" height="{dots}" fill="url(#fade)"/></mask></defs>'
-                f'<rect x="{x0}" y="{y}" width="{W - g - x0}" height="{dots}" fill="url(#dots)" mask="url(#dm)"/>')
-    body.append(f'<path d="M{x0} {y + dots}.5H{W - g}M{x0} {y + dots + row1}.5H{W - g}" stroke="{t["line"]}"/>')
-    size = 22 if mobile else 36
-    tx = x0 + (10 if mobile else 16)
-    body.append(T(SEMI, "Syed Muhammad Hassaan", tx, y + dots + row1 - (9 if mobile else 10), size, t["fg"], ls=-size * .025))
-    body.append(T(MONO, "AI Engineer.", tx, y + dots + row1 + row2 / 2 + 4.5, 12.5 if mobile else 14, t["dim"]))
-    y += cell
+                f'<linearGradient id="fade" x1="0" x2="1" y1="1" y2="0"><stop offset=".3" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".55"/></linearGradient>'
+                f'<mask id="dm"><rect x="{g}" y="{y}" width="{W - 2 * g}" height="{dots}" fill="url(#fade)"/></mask></defs>'
+                f'<rect x="{g}" y="{y}" width="{W - 2 * g}" height="{dots}" fill="url(#dots)" mask="url(#dm)"/>')
+    body.append(hline(t, W, g, y + dots + .5) + hline(t, W, g, y + dots + row1 + .5))
+    size = 24 if mobile else 36
+    body.append(T(SEMI, "Syed Muhammad Hassaan", pad, y + dots + row1 - (10 if mobile else 12), size, t["fg"], ls=-size * .025))
+    body.append(T(MONO, ROLE, pad, y + dots + row1 + row2 / 2 + 4.5, 11.5 if mobile else 14, t["dim"]))
+    y += dots + row1 + row2
     body.append(band(t, W, g, y))
     y += BAND
 
@@ -266,71 +391,62 @@ def hero(t, mobile):
                         f'<circle cx="{pad + 13}" cy="{ry + 13}" r="3.5" fill="{t["ok"]}"/>')
         body.append(T(MONO, text, pad + 40, ry + 13 + fs * .34, fs, t["fg"]))
     H = int(y + len(INTRO) * step + 8)
-    alt = "Syed Muhammad Hassaan, AI engineer. " + ". ".join(text for _, text in INTRO) + "."
-    return svg(W, H, t, g, alt, "".join(body))
+    alt = ("A pixel football match from hassaan.space: two players, one ball. Syed Muhammad Hassaan. "
+           + ROLE + ". " + ". ".join(text for _, text in INTRO) + ".")
+    return svg(W, H, t, g, alt, "".join(body), css)
 
 
 # ---------------------------------------------------------------- experience
 
-ROLES = [  # company, role, period, where, what, tags, part-time or founding
-    ("Global Health", "Lead Software Engineer", "12.2025 – now", "Dublin, Ireland (Remote)",
-     "I lead engineering on a telehealth platform that connects patients with licensed clinicians in six countries.",
-     ["TypeScript", "PostgreSQL", "Payments", "Automation", "GDPR/LGPD"], False),
-    ("Endifaa", "Full-Stack Developer", "10.2025 – 06.2026", "Saudi Arabia (Remote)",
-     "Built and maintained the Endifaa sports-academy platform.",
-     ["React", "TypeScript", "RTK Query", "Django/DRF", "PostgreSQL", "Docker"], False),
-    ("Jordy", "Co-Founder", "03.2026 – now", "Dubai, UAE (Hybrid)",
-     "Co-building an AI outbound sales platform that finds prospects, researches them, and runs personalised campaigns.",
-     ["React", "TypeScript", "LLMs", "Automation", "Analytics"], True),
-    ("Aertonic", "Founding Engineer", "11.2025 – now", "Dubai, UAE (Remote)",
-     "Building the core product from the ground up and shaping its architecture as an early team member.",
-     ["TypeScript", "AI", "Product Engineering"], True),
-    ("Zao Fi", "Founding Engineer", "2025 – now", "Karachi, Pakistan (Startup)",
-     "A stock AI that I build with friends. It watches what whales, insiders and Congress are buying, and turns it "
-     "into one 0–100 conviction score with the reasons in plain English.",
-     ["AI", "Market Data", "Explainable Scores"], True),
+ROLES = [  # company, role, start (y, m), end or None
+    ("Global Health", "Lead Software Engineer", (2025, 12), None),
+    ("Jordy", "Co-Founder", (2026, 3), None),
+    ("Aertonic", "Founding Engineer", (2025, 11), None),
+    ("Zao Fi", "Founding Engineer", (2025, 1), None),
+    ("Endifaa", "Full-Stack Developer", (2025, 10), (2026, 6)),
+    ("Stackloom Technologies", "AI & Prompt Engineer", (2025, 1), (2025, 9)),
+    ("Freelance", "AI/ML Engineer & Web Developer", (2024, 7), None),
+    ("Quest Marketing Kuching", "Lead AI & Software Engineer", (2024, 3), (2024, 12)),
 ]
 
 
-def experience(t, mobile):
+def timeline(t, mobile, today):
+    """Experience as bars on a time axis: the site shows a list, the readme shows the overlap."""
     W, g, pad = lay(mobile)
     head, y = section(t, mobile, "Experience", "01")
     body = [head]
-    ind = pad + 38
-    side_done = False
-    for i, (name, role, period, where, what, tg, side) in enumerate(ROLES):
-        if side and not side_done:
-            side_done = True
-            body.append(hline(t, W, g, y + .5) + T(SEMI, "Part-time & founding roles", pad, y + 30, 14.5, t["fg"]))
-            y += 44
-        elif i:
-            body.append(hline(t, W, g, y + .5))
-            y += 4
-        y += 16
-        body.append(tile(t, "work", pad, y) + T(SEMI, name, ind, y + 19.5, 18.5, t["fg"], ls=-.2))
-        if period.endswith("now"):
-            body.append(now_dot(t, W - pad - 8, y + 13))
-        # the thread from the tile down the role, as on the site
-        top = y + 32
-        y += 50
-        body.append(T(MED, role, ind, y, 15, t["fg"]))
+    x0, x1 = (pad if mobile else g + 250), W - pad - 6
+    start, now = (2024, 1), (today.year, today.month)
+    months = lambda ym: (ym[0] - start[0]) * 12 + ym[1] - start[1]
+    span = months(now) + 1
+    X = lambda ym: x0 + months(ym) / span * (x1 - x0)
+    top = y + 34
+    rowh = 54 if mobile else 46
+    bottom = top + rowh * len(ROLES)
+    for yr in range(start[0], today.year + 1):
+        gx = X((yr, 1))
+        body.append(f'<path d="M{gx:.1f} {y + 12}V{bottom}" stroke="{t["border"]}" stroke-dasharray="2 4"/>'
+                    + T(MONO, str(yr), gx + 5, y + 22, 11, t["dim"]))
+    if not mobile:
+        body.append(f'<path d="M{x0 - 18}.5 {y}V{bottom}" stroke="{t["line"]}"/>')
+    for i, (name, role, s, e) in enumerate(ROLES):
+        ry = top + i * rowh
+        body.append(hline(t, W, g, ry + .5))
+        end = e or now
+        bx, bw = X(s), X((end[0], end[1] + 1)) - X(s)  # a bar covers its last month
         if mobile:
-            y += 20
-            body.append(T(MONO, period, ind, y, 12, t["dim"]))
+            body.append(T(MED, name, pad, ry + 21, 13.5, t["fg"]) + T(MONO, role, pad + MED.width(name, 13.5) + 8, ry + 21, 9.5, t["dim"]))
+            by = ry + 31
         else:
-            body.append(T(MONO, period, W - pad, y, 12.5, t["dim"], anchor="end"))
-        y += 21
-        body.append(T(MONO, where, ind, y, 12, t["dim"]))
-        y += 24
-        p, ph = para(BODY, what, ind, y, 14, t["dim"], W - pad - ind)
-        body.append(p)
-        y += ph - 2
-        tg_svg, y = tags(t, tg, ind, y, W - pad)
-        body.append(tg_svg)
-        body.append(f'<path d="M{pad + 13}.5 {top}V{y - 11}H{ind - 6}" fill="none" stroke="{t["border"]}"/>')
-        y += 18
-    alt = "Experience. " + " ".join(f"{n}, {r}, {p}." for n, r, p, *_ in ROLES)
-    return svg(W, int(y), t, g, alt, "".join(body))
+            body.append(T(MED, name, pad, ry + 21, 14.5, t["fg"]) + T(MONO, role, pad, ry + 36, 10.5, t["dim"]))
+            by = ry + 16
+        live = e is None
+        body.append(f'<rect x="{bx:.1f}" y="{by}" width="{bw:.1f}" height="14" rx="4" fill="{t["acc"] if live else t["dim"]}" fill-opacity="{1 if live else .35}"/>')
+        if live:
+            body.append(now_dot(t, f"{bx + bw:.1f}", by + 7))
+    alt = "Experience, as a timeline from 2024 to now. " + " ".join(
+        f"{n}, {r}, {s[1]:02d}.{s[0]} to {'now' if e is None else f'{e[1]:02d}.{e[0]}'}." for n, r, s, e in ROLES)
+    return svg(W, int(bottom + 14), t, g, alt, "".join(body))
 
 
 # ---------------------------------------------------------------- clients
@@ -537,7 +653,8 @@ def contact(t, mobile):
 def main():
     load_fonts()
     OUT.mkdir(exist_ok=True)
-    cards = {"hero": hero, "experience": experience, "clients": world, "stack": stack, "contact": contact}
+    today = date.today()
+    cards = {"hero": hero, "experience": lambda t, m: timeline(t, m, today), "clients": world, "stack": stack, "contact": contact}
     for i, p in enumerate(PROJECTS):
         cards[p["slug"]] = lambda t, m, p=p, first=i == 0: project(t, p, m, first)
     for slug, fn in cards.items():

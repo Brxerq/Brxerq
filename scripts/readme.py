@@ -31,7 +31,7 @@ PROJECTS = [  # in the site's order
      "Zao Fi. A stock AI that turns whale, insider and Congress trades into a 0 to 100 conviction score. Founding engineer."),
 ]
 
-README = f"""{pic("hero", "Syed Muhammad Hassaan, AI engineer. Lead Software Engineer at Global Health. Karachi, Pakistan. sm.hassaan99@gmail.com. Available for freelance projects.", SITE)}
+README = f"""{pic("hero", "A pixel football match from hassaan.space: two players and one ball. Syed Muhammad Hassaan, AI engineer and full-stack software developer. Lead Software Engineer at Global Health. Karachi, Pakistan. sm.hassaan99@gmail.com. Available for freelance projects.", SITE)}
 
 <p align="center">
   <a href="{SITE}"><b>Portfolio ↗</b></a> &nbsp;·&nbsp;
@@ -50,17 +50,7 @@ I design and build AI products, web platforms and automation for startups and bu
 </picture>
 </p>
 
-{pic("experience", "Experience. Global Health, lead software engineer since Dec 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Part-time and founding roles: Jordy, co-founder since Mar 2026. Aertonic, founding engineer since Nov 2025. Zao Fi, founding engineer since 2025.")}
-
-<details>
-<summary><b>Earlier roles</b></summary>
-<br>
-
-- **Stackloom Technologies** · AI & Prompt Engineer · 01.2025 – 09.2025 · Riyadh, Saudi Arabia (Remote)
-- **Freelance** · AI/ML Engineer & Web Developer · 07.2024 – now · Remote
-- **Quest Marketing Kuching** · Lead AI & Software Engineer · 03.2024 – 12.2024 · Kuching, Malaysia (On-site)
-
-</details>
+{pic("experience", "Experience, as a timeline from 2024 to now. Global Health, lead software engineer since Dec 2025. Jordy, co-founder since Mar 2026. Aertonic, founding engineer since Nov 2025. Zao Fi, founding engineer since 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Stackloom Technologies, AI and prompt engineer Jan to Sep 2025. Freelance, AI/ML engineer and web developer since Jul 2024. Quest Marketing Kuching, lead AI and software engineer Mar to Dec 2024.")}
 
 {pic("clients", "Clients in 12 countries: Hong Kong, Malaysia, Singapore, UAE, Saudi Arabia, Czechia, Norway, Spain, Portugal, Ireland, Brazil and USA. Based in Karachi.", SITE)}
 
