@@ -1,16 +1,16 @@
 <p>
-<a href="https://brxerq.github.io/app/">
+<a href="https://hassaan.space/">
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/hero-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="art/hero-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="art/hero-dark.svg">
-  <img src="art/hero-light.svg" alt="Syed Muhammad Hassaan. AI engineer and full-stack developer in Karachi. Clients in 12 countries, 13 products and sites shipped." width="100%">
+  <img src="art/hero-light.svg" alt="Syed Muhammad Hassaan, AI engineer. Lead Software Engineer at Global Health. Karachi, Pakistan. sm.hassaan99@gmail.com. Available for freelance projects." width="100%">
 </picture>
 </a>
 </p>
 
 <p align="center">
-  <a href="https://brxerq.github.io/app/"><b>Portfolio ↗</b></a> &nbsp;·&nbsp;
+  <a href="https://hassaan.space/"><b>Portfolio ↗</b></a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/syed-muhammad-hassaan/"><b>LinkedIn ↗</b></a> &nbsp;·&nbsp;
   <a href="https://ryzonlabs.com"><b>Ryzon Labs ↗</b></a> &nbsp;·&nbsp;
   <a href="https://ryzuntech.com/"><b>RyzunTech ↗</b></a> &nbsp;·&nbsp;
@@ -20,19 +20,41 @@
 I design and build AI products, web platforms and automation for startups and businesses around the world: AI agents and chatbots, web apps and platforms, workflow automation, and websites built to rank.
 
 <p>
-<a href="https://brxerq.github.io/app/">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-dark.svg">
+  <img src="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-light.svg" alt="My GitHub contributions over the past year, redrawn every day." width="100%">
+</picture>
+</p>
+
+<p>
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/experience-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/experience-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/experience-dark.svg">
+  <img src="art/experience-light.svg" alt="Experience. Global Health, lead software engineer since Dec 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Part-time and founding roles: Jordy, co-founder since Mar 2026. Aertonic, founding engineer since Nov 2025. Zao Fi, founding engineer since 2025." width="100%">
+</picture>
+</p>
+
+<details>
+<summary><b>Earlier roles</b></summary>
+<br>
+
+- **Stackloom Technologies** · AI & Prompt Engineer · 01.2025 – 09.2025 · Riyadh, Saudi Arabia (Remote)
+- **Freelance** · AI/ML Engineer & Web Developer · 07.2024 – now · Remote
+- **Quest Marketing Kuching** · Lead AI & Software Engineer · 03.2024 – 12.2024 · Kuching, Malaysia (On-site)
+
+</details>
+
+<p>
+<a href="https://hassaan.space/">
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/clients-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="art/clients-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="art/clients-dark.svg">
-  <img src="art/clients-light.svg" alt="Clients in 12 countries, plotted by bearing and distance from Karachi: UAE, Saudi Arabia, Singapore, Malaysia, Hong Kong, Czechia, Norway, Ireland, Spain, Portugal, Brazil and USA." width="100%">
+  <img src="art/clients-light.svg" alt="Clients in 12 countries: Hong Kong, Malaysia, Singapore, UAE, Saudi Arabia, Czechia, Norway, Spain, Portugal, Ireland, Brazil and USA. Based in Karachi." width="100%">
 </picture>
 </a>
 </p>
-
-## Selected projects
-
-Five products I designed and built: four for clients and one of my own. All are live. Click a card to visit.
 
 <p>
 <a href="https://www.myglobalhealth.online/">
@@ -40,7 +62,18 @@ Five products I designed and built: four for clients and one of my own. All are 
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/global-health-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="art/global-health-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="art/global-health-dark.svg">
-  <img src="art/global-health-light.svg" alt="Global Health. Online doctor visits in six countries. Lead software engineer since Dec 2025." width="100%">
+  <img src="art/global-health-light.svg" alt="Live sites, 12 in total. Global Health. Online doctor visits in six countries. Lead software engineer since Dec 2025." width="100%">
+</picture>
+</a>
+</p>
+
+<p>
+<a href="https://endifaa.com/">
+<picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/endifaa-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/endifaa-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/endifaa-dark.svg">
+  <img src="art/endifaa-light.svg" alt="Endifaa. A sports-academy platform in English and Arabic. Full-stack developer, Oct 2025 to Jun 2026." width="100%">
 </picture>
 </a>
 </p>
@@ -68,23 +101,12 @@ Five products I designed and built: four for clients and one of my own. All are 
 </p>
 
 <p>
-<a href="https://endifaa.com/">
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/endifaa-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="art/endifaa-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="art/endifaa-dark.svg">
-  <img src="art/endifaa-light.svg" alt="Endifaa. A sports-academy platform in English and Arabic. Full-stack developer, Oct 2025 to Jun 2026." width="100%">
-</picture>
-</a>
-</p>
-
-<p>
 <a href="https://zaofi.com/">
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/zaofi-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="art/zaofi-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="art/zaofi-dark.svg">
-  <img src="art/zaofi-light.svg" alt="Zao Fi. A stock AI that turns whale, insider and Congress trades into a 0 to 100 conviction score. My own product." width="100%">
+  <img src="art/zaofi-light.svg" alt="Zao Fi. A stock AI that turns whale, insider and Congress trades into a 0 to 100 conviction score. Founding engineer." width="100%">
 </picture>
 </a>
 </p>
@@ -120,10 +142,10 @@ Five products I designed and built: four for clients and one of my own. All are 
 
 <p>
 <picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/experience-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="art/experience-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="art/experience-dark.svg">
-  <img src="art/experience-light.svg" alt="Experience timeline: Jordy, co-founder since Mar 2026. Global Health, lead software engineer since Dec 2025. Aertonic, founding engineer since Nov 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Stackloom, AI and prompt engineer Jan to Sep 2025. Freelance since Jul 2024. Quest Marketing, lead AI and software engineer Mar to Dec 2024." width="100%">
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/stack-mobile-dark.svg">
+  <source media="(max-width: 600px)" srcset="art/stack-mobile-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="art/stack-dark.svg">
+  <img src="art/stack-light.svg" alt="Stack. Languages: Python, TypeScript, C++, Dart. AI and data: TensorFlow, PyTorch, OpenCV, OpenAI API, LLMs and NLP. Frameworks: React, Next.js, Django and DRF, Flutter. Backend: PostgreSQL, MySQL, FastAPI, RabbitMQ. Tools: Docker, AWS, Vercel, Railway, Git. AI workflow: Claude, Codex, Antigravity, T3 Code." width="100%">
 </picture>
 </p>
 
@@ -141,31 +163,13 @@ Five products I designed and built: four for clients and one of my own. All are 
 
 </details>
 
-## Activity
-
-<p>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-dark.svg">
-  <img src="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-light.svg" alt="My GitHub contributions over the past year, redrawn every day." width="100%">
-</picture>
-</p>
-
-<p>
-<picture>
-  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/stack-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="art/stack-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="art/stack-dark.svg">
-  <img src="art/stack-light.svg" alt="Stack. Languages: Python, TypeScript, C++, Dart. AI and data: TensorFlow, PyTorch, OpenCV, LLMs and NLP, Hugging Face. Frameworks: React, Django and DRF, FastAPI, Flutter. Backend and infra: PostgreSQL, MySQL, Docker, AWS, RabbitMQ." width="100%">
-</picture>
-</p>
-
 <p>
 <a href="mailto:sm.hassaan99@gmail.com">
 <picture>
   <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="art/contact-mobile-dark.svg">
   <source media="(max-width: 600px)" srcset="art/contact-mobile-light.svg">
   <source media="(prefers-color-scheme: dark)" srcset="art/contact-dark.svg">
-  <img src="art/contact-light.svg" alt="Let's talk. Email sm.hassaan99@gmail.com. I reply within about a day." width="100%">
+  <img src="art/contact-light.svg" alt="Contact. Email sm.hassaan99@gmail.com. Karachi, Pakistan, UTC+5." width="100%">
 </picture>
 </a>
 </p>
@@ -174,5 +178,5 @@ Five products I designed and built: four for clients and one of my own. All are 
   <a href="mailto:sm.hassaan99@gmail.com">Email</a> &nbsp;/&nbsp;
   <a href="https://www.linkedin.com/in/syed-muhammad-hassaan/">LinkedIn</a> &nbsp;/&nbsp;
   <a href="https://www.instagram.com/ha_ssaann/">Instagram</a> &nbsp;/&nbsp;
-  <a href="https://brxerq.github.io/app/">Portfolio</a>
+  <a href="https://hassaan.space/">Portfolio</a>
 </p>

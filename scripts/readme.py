@@ -2,7 +2,7 @@
 import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SITE = "https://brxerq.github.io/app/"
+SITE = "https://hassaan.space/"
 MAIL = "mailto:sm.hassaan99@gmail.com"
 
 
@@ -18,20 +18,20 @@ def pic(slug, alt, href=None):
     return f"<p>\n{s}\n</p>"
 
 
-PROJECTS = [
+PROJECTS = [  # in the site's order
     ("global-health", "https://www.myglobalhealth.online/",
-     "Global Health. Online doctor visits in six countries. Lead software engineer since Dec 2025."),
+     "Live sites, 12 in total. Global Health. Online doctor visits in six countries. Lead software engineer since Dec 2025."),
+    ("endifaa", "https://endifaa.com/",
+     "Endifaa. A sports-academy platform in English and Arabic. Full-stack developer, Oct 2025 to Jun 2026."),
     ("jordy", "https://hirejordy.com/",
      "Jordy. An AI sales rep that finds buyers and books meetings. Co-founder since Mar 2026."),
     ("aertonic", "https://aertonic.com/",
      "Aertonic. Books qualified B2B sales meetings and only charges for the ones that happen. Founding engineer since Nov 2025."),
-    ("endifaa", "https://endifaa.com/",
-     "Endifaa. A sports-academy platform in English and Arabic. Full-stack developer, Oct 2025 to Jun 2026."),
     ("zaofi", "https://zaofi.com/",
-     "Zao Fi. A stock AI that turns whale, insider and Congress trades into a 0 to 100 conviction score. My own product."),
+     "Zao Fi. A stock AI that turns whale, insider and Congress trades into a 0 to 100 conviction score. Founding engineer."),
 ]
 
-README = f"""{pic("hero", "Syed Muhammad Hassaan. AI engineer and full-stack developer in Karachi. Clients in 12 countries, 13 products and sites shipped.", SITE)}
+README = f"""{pic("hero", "Syed Muhammad Hassaan, AI engineer. Lead Software Engineer at Global Health. Karachi, Pakistan. sm.hassaan99@gmail.com. Available for freelance projects.", SITE)}
 
 <p align="center">
   <a href="{SITE}"><b>Portfolio ↗</b></a> &nbsp;·&nbsp;
@@ -43,11 +43,26 @@ README = f"""{pic("hero", "Syed Muhammad Hassaan. AI engineer and full-stack dev
 
 I design and build AI products, web platforms and automation for startups and businesses around the world: AI agents and chatbots, web apps and platforms, workflow automation, and websites built to rank.
 
-{pic("clients", "Clients in 12 countries, plotted by bearing and distance from Karachi: UAE, Saudi Arabia, Singapore, Malaysia, Hong Kong, Czechia, Norway, Ireland, Spain, Portugal, Brazil and USA.", SITE)}
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-dark.svg">
+  <img src="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-light.svg" alt="My GitHub contributions over the past year, redrawn every day." width="100%">
+</picture>
+</p>
 
-## Selected projects
+{pic("experience", "Experience. Global Health, lead software engineer since Dec 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Part-time and founding roles: Jordy, co-founder since Mar 2026. Aertonic, founding engineer since Nov 2025. Zao Fi, founding engineer since 2025.")}
 
-Five products I designed and built: four for clients and one of my own. All are live. Click a card to visit.
+<details>
+<summary><b>Earlier roles</b></summary>
+<br>
+
+- **Stackloom Technologies** · AI & Prompt Engineer · 01.2025 – 09.2025 · Riyadh, Saudi Arabia (Remote)
+- **Freelance** · AI/ML Engineer & Web Developer · 07.2024 – now · Remote
+- **Quest Marketing Kuching** · Lead AI & Software Engineer · 03.2024 – 12.2024 · Kuching, Malaysia (On-site)
+
+</details>
+
+{pic("clients", "Clients in 12 countries: Hong Kong, Malaysia, Singapore, UAE, Saudi Arabia, Czechia, Norway, Spain, Portugal, Ireland, Brazil and USA. Based in Karachi.", SITE)}
 
 {chr(10).join(pic(s, a, h) + chr(10) for s, h, a in PROJECTS)}
 <details>
@@ -79,7 +94,7 @@ Five products I designed and built: four for clients and one of my own. All are 
 
 </details>
 
-{pic("experience", "Experience timeline: Jordy, co-founder since Mar 2026. Global Health, lead software engineer since Dec 2025. Aertonic, founding engineer since Nov 2025. Endifaa, full-stack developer Oct 2025 to Jun 2026. Stackloom, AI and prompt engineer Jan to Sep 2025. Freelance since Jul 2024. Quest Marketing, lead AI and software engineer Mar to Dec 2024.")}
+{pic("stack", "Stack. Languages: Python, TypeScript, C++, Dart. AI and data: TensorFlow, PyTorch, OpenCV, OpenAI API, LLMs and NLP. Frameworks: React, Next.js, Django and DRF, Flutter. Backend: PostgreSQL, MySQL, FastAPI, RabbitMQ. Tools: Docker, AWS, Vercel, Railway, Git. AI workflow: Claude, Codex, Antigravity, T3 Code.")}
 
 <details>
 <summary><b>Education & certifications</b></summary>
@@ -95,18 +110,7 @@ Five products I designed and built: four for clients and one of my own. All are 
 
 </details>
 
-## Activity
-
-<p>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-dark.svg">
-  <img src="https://raw.githubusercontent.com/Brxerq/Brxerq/output/activity-light.svg" alt="My GitHub contributions over the past year, redrawn every day." width="100%">
-</picture>
-</p>
-
-{pic("stack", "Stack. Languages: Python, TypeScript, C++, Dart. AI and data: TensorFlow, PyTorch, OpenCV, LLMs and NLP, Hugging Face. Frameworks: React, Django and DRF, FastAPI, Flutter. Backend and infra: PostgreSQL, MySQL, Docker, AWS, RabbitMQ.")}
-
-{pic("contact", "Let's talk. Email sm.hassaan99@gmail.com. I reply within about a day.", MAIL)}
+{pic("contact", "Contact. Email sm.hassaan99@gmail.com. Karachi, Pakistan, UTC+5.", MAIL)}
 
 <p align="center">
   <a href="{MAIL}">Email</a> &nbsp;/&nbsp;
